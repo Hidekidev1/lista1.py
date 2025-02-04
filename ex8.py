@@ -1,8 +1,3 @@
-from functools import reduce
+contar_letras = lambda lista: reduce(lambda x, y: x + y, map(len, lista))
 
-def contar_letras(lista):
-    return reduce(lambda x, y: x + y, map(len, lista))
-
-entrada = ["casa", "python", "lambda"]
-saida = contar_letras(entrada)
-print(saida)  
+print(contar_letras(["casa", "python", "lambda"]))  # Saída: 16

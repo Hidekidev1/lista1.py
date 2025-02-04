@@ -1,6 +1,3 @@
-def dobrar_lista(lista):
-    return list(map(lambda x: x * 2, lista))
+dobrar_elementos = lambda lista: list(map(lambda x: x * 2, lista))
 
-entrada = [1, 2, 3, 4]
-saida = dobrar_lista(entrada)
-print(saida)  
+print(dobrar_elementos([1, 2, 3, 4]))  

@@ -1,6 +1,3 @@
-def elevar_quadrado_e_ordenar(lista):
-    return sorted(map(lambda x: x ** 2, lista))
+elevar_quadrado_e_ordenar = lambda lista: sorted(map(lambda x: x ** 2, lista))
 
-entrada = [3, 1, 4, 2]
-saida = elevar_quadrado_e_ordenar(entrada)
-print(saida)  
+print(elevar_quadrado_e_ordenar([3, 1, 4, 2]))  # Saída: [1, 4, 9, 16]

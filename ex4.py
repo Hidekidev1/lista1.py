@@ -1,6 +1,3 @@
-def filtrar_nomes_longos(lista):
-    return list(filter(lambda nome: len(nome) > 5, lista))
+filtrar_nomes_longos = lambda lista: list(filter(lambda nome: len(nome) > 5, lista))
 
-entrada = ["Ana", "Lucas", "Fernanda", "João"]
-saida = filtrar_nomes_longos(entrada)
-print(saida)  
+print(filtrar_nomes_longos(["Ana", "Lucas", "Fernanda", "João"]))  # Saída: ["Lucas", "Fernanda"]
